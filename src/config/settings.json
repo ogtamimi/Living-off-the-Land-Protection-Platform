@@ -1,0 +1,15 @@
+{
+    "protection": {
+        "enabled": true,
+        "auto_suspend": true,
+        "auto_terminate": false,
+        "sensitivity": "medium"
+    },
+    "notifications": {
+        "show_alerts": true,
+        "sound_enabled": true
+    },
+    "whitelist": [
+        "C:\\Windows\\System32\\safe_tool.exe"
+    ]
+}
