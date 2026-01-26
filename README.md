@@ -185,15 +185,15 @@ OGT WatchTower uses behavioral analysis to detect when these legitimate tools ar
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Dashboard](assets/screenshots/dashboard.png)
+![Dashboard](assets/screenshots/dashboard.png?v=2)
 *Real-time monitoring dashboard with threat statistics and status indicators*
 
 ### Live Monitoring Panel
-![Monitoring](assets/screenshots/monitoring.png)
+![Monitoring](assets/screenshots/monitoring.png?v=2)
 *Active process monitoring with threat level indicators and modern data grid*
 
 ### Settings Panel
-![Settings](assets/screenshots/settings.png)
+![Settings](assets/screenshots/settings.png?v=2)
 *Customizable settings, protection toggles, and whitelist management*
 
 ## 🔧 How It Works
