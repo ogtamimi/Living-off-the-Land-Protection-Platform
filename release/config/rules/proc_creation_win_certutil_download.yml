@@ -1,0 +1,16 @@
+title: Certutil Download
+id: 1
+status: experimental
+description: Detects suspicious use of certutil to download files
+author: OGT WatchTower
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: 'certutil.exe'
+        CommandLine|contains: 
+            - 'urlcache'
+            - 'split'
+    condition: selection
+level: high

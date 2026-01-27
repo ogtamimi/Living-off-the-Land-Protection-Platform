@@ -1,0 +1,13 @@
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\bin\Release\net10.0\OGT.WatchTower.Core.deps.json
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\bin\Release\net10.0\OGT.WatchTower.Core.dll
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\bin\Release\net10.0\OGT.WatchTower.Core.pdb
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.csproj.AssemblyReference.cache
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.AssemblyInfoInputs.cache
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.AssemblyInfo.cs
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.csproj.CoreCompileInputs.cache
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.sourcelink.json
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.dll
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\refint\OGT.WatchTower.Core.dll
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\OGT.WatchTower.Core.pdb
+C:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.Core\obj\Release\net10.0\ref\OGT.WatchTower.Core.dll
