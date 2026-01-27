@@ -1,0 +1,19 @@
+title: Suspicious whoami execution
+id: 569d2a23-bc34-4b5d-bb03-2470769389e0
+status: experimental
+description: Detects suspicious use of whoami.exe
+author: OGT WatchTower
+level: medium
+logsource:
+    product: windows
+    service: sysmon
+detection:
+    selection:
+        Image|endswith: '\whoami.exe'
+    condition: selection
+fields:
+    - CommandLine
+    - ParentImage
+tags:
+    - attack.discovery
+    - attack.t1033
