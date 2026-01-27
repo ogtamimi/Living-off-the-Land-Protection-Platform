@@ -1,0 +1,20 @@
+﻿OGT.WatchTower.App
+1.0.0.0
+
+winexe
+C#
+.cs
+c:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.App\obj\Debug\net10.0-windows\
+OGT.WatchTower.App
+none
+false
+TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+c:\Users\OGT\Documents\Projects\Living-off-the-Land-Protection-Platform v2\src_csharp\OGT.WatchTower.App\App.xaml
+71547553898
+9-2079286291
+121706702911
+2091399659073
+MainWindow.xaml;Views\DashboardView.xaml;Views\ForensicsView.xaml;Views\IntelligenceView.xaml;Views\LogsView.xaml;Views\MonitoringView.xaml;Views\SettingsView.xaml;
+
+True
+

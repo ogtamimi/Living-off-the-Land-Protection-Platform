@@ -1,0 +1,22 @@
+{
+  "general": {
+    "dark_mode": true
+  },
+  "telemetry": {
+    "sysmon_enabled": true
+  },
+  "detection": {
+    "sigma_enabled": true
+  },
+  "integrations": {
+    "virustotal_key": "",
+    "abuseipdb_key": ""
+  },
+  "response": {
+    "auto_kill": true,
+    "auto_suspend": true
+  },
+  "whitelist": [
+    "C:\\Windows\\System32\\safe_tool.exe"
+  ]
+}

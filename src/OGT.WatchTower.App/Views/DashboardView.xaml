@@ -1,0 +1,102 @@
+<UserControl x:Class="OGT.WatchTower.App.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Stats Cards -->
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Column="0" Background="#252525" CornerRadius="8" Padding="20" Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Active Processes" Foreground="#888888" FontSize="14"/>
+                    <TextBlock x:Name="ActiveProcessesText" Text="0" Foreground="White" FontSize="28" FontWeight="Bold" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Background="#252525" CornerRadius="8" Padding="20" Margin="5,0,5,0">
+                <StackPanel>
+                    <TextBlock Text="Alerts Today" Foreground="#888888" FontSize="14"/>
+                    <TextBlock x:Name="AlertsCountText" Text="0" Foreground="#FF4444" FontSize="28" FontWeight="Bold" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Background="#252525" CornerRadius="8" Padding="20" Margin="10,0,0,0">
+                <StackPanel>
+                    <TextBlock Text="Active Rules" Foreground="#888888" FontSize="14"/>
+                    <TextBlock x:Name="ActiveRulesText" Text="Loading..." Foreground="#00D4FF" FontSize="28" FontWeight="Bold" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Recent Alerts -->
+        <Border Grid.Row="1" Background="#252525" CornerRadius="8" Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Text="Recent Alerts" Foreground="White" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,15"/>
+                
+                <ListView x:Name="AlertsList" Grid.Row="1" Background="Transparent" BorderThickness="0" Foreground="White">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListViewItem">
+                                        <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                                            <GridViewRowPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="Bd" Property="Background" Value="#333333"/>
+                                            </Trigger>
+                                            <Trigger Property="IsSelected" Value="True">
+                                                <Setter TargetName="Bd" Property="Background" Value="#555555"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Time" Width="100" DisplayMemberBinding="{Binding Time}"/>
+                            <GridViewColumn Header="Level" Width="80" DisplayMemberBinding="{Binding Level}"/>
+                            <GridViewColumn Header="Alert" Width="350" DisplayMemberBinding="{Binding Title}"/>
+                            <GridViewColumn Header="Action" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="KILL" 
+                                                Background="#FF4444" 
+                                                Foreground="White" 
+                                                BorderThickness="0" 
+                                                Padding="10,2"
+                                                Visibility="{Binding ButtonVisibility}"
+                                                Click="KillButton_Click"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

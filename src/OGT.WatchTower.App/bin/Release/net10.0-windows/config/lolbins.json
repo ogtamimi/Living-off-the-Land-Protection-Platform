@@ -1,0 +1,95 @@
+{
+  "monitored_tools": [
+    {
+      "name": "certutil.exe",
+      "path": "C:\\Windows\\System32\\certutil.exe",
+      "enabled": true,
+      "threat_indicators": [
+        "-urlcache",
+        "-decode",
+        "-split"
+      ],
+      "risk_level": "high"
+    },
+    {
+      "name": "powershell.exe",
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "enabled": true,
+      "threat_indicators": [
+        "-encodedCommand",
+        "-WindowStyle Hidden",
+        "Invoke-Expression",
+        "IEX",
+        "DownloadString",
+        "DownloadFile",
+        "-NoProfile",
+        "-NonInteractive"
+      ],
+      "risk_level": "high"
+    },
+    {
+      "name": "mshta.exe",
+      "path": "C:\\Windows\\System32\\mshta.exe",
+      "enabled": true,
+      "threat_indicators": [
+        "javascript:",
+        "vbscript:",
+        ".hta"
+      ],
+      "risk_level": "high"
+    },
+    {
+      "name": "wmic.exe",
+      "path": "C:\\Windows\\System32\\wbem\\wmic.exe",
+      "enabled": true,
+      "threat_indicators": [
+        "process call create",
+        "/node:"
+      ],
+      "risk_level": "medium"
+    },
+    {
+      "name": "regsvr32.exe",
+      "path": "C:\\Windows\\System32\\regsvr32.exe",
+      "enabled": true,
+      "threat_indicators": [
+        "/s",
+        "/u",
+        "/i",
+        "scrobj.dll"
+      ],
+      "risk_level": "medium"
+    },
+    {
+      "name": "chrome.exe",
+      "path": "chrome.exe",
+      "enabled": true,
+      "threat_indicators": [
+        "--headless",
+        "--dump-dom"
+      ],
+      "risk_level": "low"
+    },
+    {
+      "name": "devenv.exe",
+      "path": "devenv.exe",
+      "enabled": true,
+      "threat_indicators": [],
+      "risk_level": "low"
+    },
+    {
+      "name": "code.exe",
+      "path": "code.exe",
+      "enabled": true,
+      "threat_indicators": [],
+      "risk_level": "low"
+    },
+    {
+      "name": "notepad.exe",
+      "path": "notepad.exe",
+      "enabled": true,
+      "threat_indicators": [],
+      "risk_level": "low"
+    }
+  ]
+}

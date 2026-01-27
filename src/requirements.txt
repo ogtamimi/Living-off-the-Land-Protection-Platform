@@ -1,9 +1,0 @@
-psutil
-wmi
-pywin32
-customtkinter
-packaging
-pillow
-yara-python
-requests
-pyyaml
