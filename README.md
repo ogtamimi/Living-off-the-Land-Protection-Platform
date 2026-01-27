@@ -1,4 +1,4 @@
-# 🛡️ OGT WatchTower v1.2 - Professional Edition
+# 🛡️ OGT WatchTower v1.2 
 
 **Advanced Behavioral Protection Platform**
 
