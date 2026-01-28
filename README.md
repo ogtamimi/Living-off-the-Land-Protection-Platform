@@ -1,3 +1,4 @@
+![USB Rubber Ducky Immunizer Banner](assets/banner.jpg)
 # 🛡️ OGT WatchTower v2
 
 **Advanced Behavioral Protection Platform**
